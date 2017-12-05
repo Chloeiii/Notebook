@@ -1,5 +1,5 @@
 # Python-DailyExercise
-algorithms from leetcode
+Practice makes perfect
 
 :yum: :yellow_heart: :metal:
 ----
