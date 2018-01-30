@@ -4,7 +4,7 @@ Practice makes perfect
 :yum: :yellow_heart: :metal:
 
 ----
-## Dictionary
+## Dictionary  
 * Create
 
       data = {}                     
@@ -39,7 +39,7 @@ Practice makes perfect
       for key, value in d.items():    # Iterates through the pairs
    
 ----
-## List
+## List  
 * Create
 
       list = []          
@@ -55,4 +55,4 @@ Practice makes perfect
 
       del list[2] #2 is the index
       
-      
+----
