@@ -4,7 +4,11 @@ Practice makes perfect
 :yum: :yellow_heart: :metal:
 
 ----
-## Dictionary  
+## Resources
+* [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
+
+----
+## Dictionary  :peach:
 * Create
 
       data = {}                     
@@ -39,7 +43,8 @@ Practice makes perfect
       for key, value in d.items():    # Iterates through the pairs
    
 ----
-## List  
+## List :strawberry: 
+**A list keeps order, dict and set don't**
 * Create
 
       list = []          
