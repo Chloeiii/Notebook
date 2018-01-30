@@ -66,3 +66,6 @@ Practice makes perfect
       L[::-1]
       
 ----
+## Variable Type Convert:pineapple:
+      String to Int           ->        int("1")
+      String to Float         ->        float("545.2222")
