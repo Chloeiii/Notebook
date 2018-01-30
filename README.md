@@ -55,4 +55,9 @@ Practice makes perfect
 
       del list[2] #2 is the index
       
+* Reverse a list
+     
+      L.reverse()
+      L[::-1]
+      
 ----
