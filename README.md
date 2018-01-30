@@ -4,7 +4,7 @@ Practice makes perfect
 :yum: :yellow_heart: :metal:
 
 ----
-### Dictionary 
+## Dictionary
 * Create
 
       data = {}                     
@@ -39,3 +39,20 @@ Practice makes perfect
       for key, value in d.items():    # Iterates through the pairs
    
 ----
+## List
+* Create
+
+      list = []          
+      list = ['physics', 'chemistry', 1997, 2000]
+      list = [1, 2, 3, 4, 5 ]
+      list = ["a", "b", "c", "d"]
+      
+* Add
+
+      list.append('Google')
+      
+* Delete/Remove
+
+      del list[2] #2 is the index
+      
+      
