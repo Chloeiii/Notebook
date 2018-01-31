@@ -1,21 +1,22 @@
+
 # Python
 Practice makes perfect
-
 :yum: :yellow_heart: :metal:
 
 ----
 ## Contents
-| :------------:|:---------------:|:-----:|
-| [Resources](#Resources) | [Dictionary](#Dictionary) | [List](#List) |
-| [Variable Type](#Variable Type) | [Matpltlib](#Matplotlib)|   TBD |
-| TBD  | TBD | TBD |
+|  |  |  |
+| :------------:|:------------:|:------------:|
+| [Resources](#resources) | [Dictionary](#dictionary-peach) | [List](#list-strawberry) |
+| [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| TBD |
+|  |  |  |
 
 ----
 ## Resources
 * [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
 
 ----
-## Dictionary  :peach:
+## Dictionary :peach:
 * Create
 
       data = {}                     
@@ -78,7 +79,7 @@ Practice makes perfect
             list2 = [-x for x in list1]
 
 ----
-## Variable Type:pineapple:
+## Variable Type :pineapple:
       String to Int(no rounding)           ->         int(float("23.5")) = 23
       String to Int(rounding)              ->         int(round(float("23.5"))) = 24
 
