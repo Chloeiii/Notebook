@@ -4,6 +4,13 @@ Practice makes perfect
 :yum: :yellow_heart: :metal:
 
 ----
+## Contents
+| :------------:|:---------------:|:-----:|
+| [Resources](#Resources) | [Dictionary](#Dictionary) | [List](#List) |
+| [Variable Type](#Variable Type) | [Matpltlib](#Matplotlib)|   TBD |
+| TBD  | TBD | TBD |
+
+----
 ## Resources
 * [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
 
