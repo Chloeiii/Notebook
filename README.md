@@ -64,8 +64,19 @@ Practice makes perfect
      
       L.reverse()
       L[::-1]
-      
+
+* Cases
+
+      Turn all numbers in a list into their negative counterparts
+            list2 = [-x for x in list1]
+
 ----
-## Variable Type Convert:pineapple:
-      String to Int           ->        int("1")
-      String to Float         ->        float("545.2222")
+## Variable Type:pineapple:
+      String to Int(no rounding)           ->         int(float("23.5")) = 23
+      String to Int(rounding)              ->         int(round(float("23.5"))) = 24
+
+      String to Float                      ->         float("545.2222")
+      String to Float to 2 decimal places  ->         '%.2f' % 1.234 = 1.23
+
+----
+## Matplotlib :green_apple:
