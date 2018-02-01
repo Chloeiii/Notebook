@@ -1,19 +1,18 @@
-
 # Python
 Practice makes perfect
-:yum: :yellow_heart: :metal:
+
 
 ----
 ## Contents
-|  |  |  |
+|  :yum: |  :yellow_heart:| :metal:  |
 | :------------:|:------------:|:------------:|
 | [Resources](#resources) | [Dictionary](#dictionary-peach) | [List](#list-strawberry) |
 | [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| TBD |
-|  |  |  |
 
 ----
 ## Resources
 * [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
+* [Sample plots in Matplotlib](https://matplotlib.org/tutorials/introductory/sample_plots.html)
 
 ----
 ## Dictionary :peach:
@@ -49,6 +48,11 @@ Practice makes perfect
 
       for key in data:                # Iterates just through the keys, ignoring the values
       for key, value in d.items():    # Iterates through the pairs
+
+* Cases
+
+      1. Get list of values from dict:
+            list(d.values())
    
 ----
 ## List :strawberry: 
@@ -75,8 +79,20 @@ Practice makes perfect
 
 * Cases
 
-      Turn all numbers in a list into their negative counterparts
-            list2 = [-x for x in list1]
+      1. Turn all numbers in a list into their negative counterparts:
+            list2 = [-x for x in list1]   
+            
+      2. Compare Two String:
+            >>> a = 'pub' 
+            >>> b = ''.join(['p', 'u', 'b'])
+            >>> a == b
+            True
+            >>> a is b
+            False
+
+      3. Finding the index of an item in a list
+            >>> ["foo", "bar", "baz"].index("bar")
+            1
 
 ----
 ## Variable Type :pineapple:
@@ -86,5 +102,29 @@ Practice makes perfect
       String to Float                      ->         float("545.2222")
       String to Float to 2 decimal places  ->         '%.2f' % 1.234 = 1.23
 
+      Check variable type                  ->         isinstance(12, str) = False 
+                                                      isinstance(1, int) = True
+                                                      isinstance('aaaa', float) = False
+
 ----
 ## Matplotlib :green_apple:
+      1. plt bar chart sample(vertical):
+            plt.bar([1,2,3,4,5], [11,22,33,44,55], width = 1, color = 'blue')
+
+      2. x, y ticks
+            plt.xticks([1,2,3,4,5],['a', 'b', 'c', 'd', 'e'], fontsize=5)
+            plt.yticks([1,2,3,4,5],['a', 'b', 'c', 'd', 'e'], fontsize=5)
+      
+      3. x, y lables
+            plt.xlabel('Fiscal Year', fontsize = 6)
+            plt.ylabel('Number of Donors', fontsize = 6)
+
+      4. title
+            plt.title('title')
+
+      5. text
+            plt.text(2, 6, 'aaaaaa', fontsize=15)
+      
+      6. save img
+            plt.savefig('test.png', bbox_inches="tight", dpi = 300)
+
