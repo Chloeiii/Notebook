@@ -53,6 +53,9 @@ Practice makes perfect
 
       1. Get list of values from dict:
             list(d.values())
+
+      2. Sum all the values in a dict:
+            sum(d.values())
    
 ----
 ## List :strawberry: 
@@ -76,6 +79,25 @@ Practice makes perfect
      
       L.reverse()
       L[::-1]
+
+* Zip
+
+      1. Zip a List
+
+            list_a = [1, 2, 3, 4, 5]
+            list_b = ['a', 'b', 'c', 'd', 'e']
+            zipped_list = zip(list_a, list_b)
+            print (zipped_list)
+            >>> [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd'), (5, 'e')] 
+         
+      2. Unzip a List
+                 
+                   zipper_list = [(1, 'a'), (2, 'b'), (3, 'c')]
+                   list_a, list_b = zip(*zipper_list)
+                   print (list_a)               
+                   print (list_b)         
+                   >>> (1, 2, 3)
+                   >>> ('a', 'b', 'c')
 
 * Cases
 
@@ -128,3 +150,4 @@ Practice makes perfect
       6. save img
             plt.savefig('test.png', bbox_inches="tight", dpi = 300)
 
+----
