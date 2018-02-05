@@ -13,6 +13,7 @@ Practice makes perfect
 ## Resources
 * [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
 * [Sample plots in Matplotlib](https://matplotlib.org/tutorials/introductory/sample_plots.html)
+* [Matpltlib colors](https://matplotlib.org/users/colors.html)
 
 ----
 ## Dictionary :peach:
@@ -147,7 +148,18 @@ Practice makes perfect
       5. text
             plt.text(2, 6, 'aaaaaa', fontsize=15)
       
-      6. save img
+      6. Legend
+            lgd = plt.legend((p5, p4, p3, p2, p1),(
+                  '<100','>=100 to <500','>=500 to <1k','>=1k to <10k','>=10k'),
+                   fontsize = 6,
+                   bbox_to_anchor=(1.05, 1), 
+                   loc=2, 
+                   borderaxespad=0.,
+                   title = 'donation amount',
+                   shadow = True
+                   )
+
+      7. save img
             plt.savefig('test.png', bbox_inches="tight", dpi = 300)
 
 ----
