@@ -7,7 +7,7 @@ Practice makes perfect
 |  :yum: |  :yellow_heart:| :metal:  |
 | :------------:|:------------:|:------------:|
 | [Resources](#resources) | [Dictionary](#dictionary-peach) | [List](#list-strawberry) |
-| [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| TBD |
+| [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| [MachineLearning](#machine-learning-notes-panda_face) |
 
 ----
 ## Resources
@@ -163,3 +163,15 @@ Practice makes perfect
             plt.savefig('test.png', bbox_inches="tight", dpi = 300)
 
 ----
+## Machine Learning notes :panda_face:
+* [Random Forests](http://blog.yhat.com/posts/random-forests-in-python.html)
+* [Random Forest Classifier Example](https://chrisalbon.com/machine_learning/trees_and_forests/random_forest_classifier_example/)
+
+      Random forest is a highly versatile machine learning method with numerous 
+      applications ranging from marketing to healthcare and insurance. It can 
+      be used to model the impact of marketing on customer acquisition, retention, 
+      and churn or to predict disease risk and susceptibility in patients.
+
+      Random forest is capable of regression and classification. It can handle 
+      a large number of features, and it's helpful for estimating which of your 
+      variables are important in the underlying data being modeled.
