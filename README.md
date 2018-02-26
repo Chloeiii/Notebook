@@ -69,8 +69,18 @@ Practice makes perfect
       list = ["a", "b", "c", "d"]
       
 * Add
-
-      list.append('Google')
+      
+      1. append
+          x = [1, 2, 3]
+          x.append([4, 5])
+          print (x)
+          gives you: [1, 2, 3, [4, 5]]
+          
+      2. extend
+          x = [1, 2, 3]
+          x.extend([4, 5])
+          print (x)
+          gives you: [1, 2, 3, 4, 5]
       
 * Delete/Remove
 
@@ -116,6 +126,9 @@ Practice makes perfect
       3. Finding the index of an item in a list
             >>> ["foo", "bar", "baz"].index("bar")
             1
+
+      4. Check if a tring is in a list:
+            if 'abc' in my_list:
 
 ----
 ## Variable Type :pineapple:
@@ -164,6 +177,7 @@ Practice makes perfect
 
 ----
 ## Machine Learning notes :panda_face:
+* [Machine Learning Tutorial for Beginners](https://www.kaggle.com/kanncaa1/machine-learning-tutorial-for-beginners)
 * [Random Forests](http://blog.yhat.com/posts/random-forests-in-python.html)
 * [Random Forest Classifier Example](https://chrisalbon.com/machine_learning/trees_and_forests/random_forest_classifier_example/)
 

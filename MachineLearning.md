@@ -3,7 +3,8 @@
 ----
 ### Contents :cookie:
 * [What is Machine Learing](#what-is-machine-learning-rice_ball)
-* [Supervised vs. Unsupervised Machine Learning](#supervised-vs.-unsupervised-machine-learning-bread)
+* [Supervised vs. Unsupervised Machine Learning](#supervised-and-unsupervised-machine-learning-bread)
+* [SVM](#svm-bento)
 
 ----
 ### What is Machine Learning :rice_ball:
@@ -24,7 +25,7 @@
     Effective machine learning is difficult because finding patterns is hard and often not enough 
     training data are available; as a result, machine-learning programs often fail to deliver.
     
-### Supervised vs. Unsupervised Machine Learning :bread:
+### Supervised and Unsupervised Machine Learning :bread:
 [Learn more](https://www.datascience.com/blog/supervised-and-unsupervised-machine-learning-algorithms)
 
 [Explaination with a real-life examples](http://dataaspirant.com/2014/09/19/supervised-and-unsupervised-learning/)
@@ -39,3 +40,5 @@
       — the idea that a computer can learn to identify complex processes and patterns without a human to 
       provide guidance along the way.
       #Learning from the unlabeled data to differentiating the given input data.
+      
+### SVM :bento:
