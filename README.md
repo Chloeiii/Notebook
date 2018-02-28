@@ -25,6 +25,13 @@ Practice makes perfect
       data = {'a':1,'b':2,'c':3}    
       data = dict(a=1, b=2, c=3)
       data = {k: v for k, v in (('a', 1),('b',2),('c',3))}
+
+      *create a nested dictionary
+              >>> d = {}
+              >>> d['dict1'] = {}
+              >>> d['dict1']['innerkey'] = 'value'
+              >>> d
+              {'dict1': {'innerkey': 'value'}}
      
 * Insert/Update
 
@@ -45,6 +52,16 @@ Practice makes perfect
 
       key in data
     
+* Sort dic by values
+      To get the values:
+          sorted(data.values())
+
+      To get the matching keys:
+          sorted(data, key=data.get)
+      
+      To get a list of tuples ordered by value:
+          sorted(data.items(), key=lambda x:x[1])
+
 * Iterate
 
       for key in data:                # Iterates just through the keys, ignoring the values
