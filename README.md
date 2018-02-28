@@ -14,6 +14,7 @@ Practice makes perfect
 * [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
 * [Sample plots in Matplotlib](https://matplotlib.org/tutorials/introductory/sample_plots.html)
 * [Matpltlib colors](https://matplotlib.org/users/colors.html)
+* [matplotlib.colors documentation](https://matplotlib.org/api/colors_api.html)
 
 ----
 ## Dictionary :peach:
@@ -188,6 +189,27 @@ Practice makes perfect
                    title = 'donation amount',
                    shadow = True
                    )
+          6.1. Multiple legends on the same Axes
+                  http://matplotlib.org/users/legend_guide.html#multiple-legends-on-the-same-axes
+
+                  import matplotlib.pyplot as plt
+                  line1, = plt.plot([1,2,3], label="Line 1", linestyle='--')
+                  line2, = plt.plot([3,2,1], label="Line 2", linewidth=4)
+
+                  # Create a legend for the first line.
+                  first_legend = plt.legend(handles=[line1], loc=1)
+
+                  # Add the legend manually to the current Axes.
+                  ax = plt.gca().add_artist(first_legend)
+
+                  # Create another legend for the second line.
+                  plt.legend(handles=[line2], loc=4)
+
+                  plt.show()
+
+          6.2. Manually add legend items 
+                  https://stackoverflow.com/questions/39500265/manually-add-legend-items-python-matplotlib
+
 
       7. save img
             plt.savefig('test.png', bbox_inches="tight", dpi = 300)
