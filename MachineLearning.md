@@ -1,10 +1,13 @@
-## Machine Learning
+## Machine Learning:checkered_flag:
+
+### Tutorials && Courses
+* [Machine Learning Tutorial for Beginners](https://www.kaggle.com/kanncaa1/machine-learning-tutorial-for-beginners)
+* [Machine Learning - Andrew Ng](https://www.coursera.org/learn/machine-learning)
 
 ----
 ### Contents :cookie:
 * [What is Machine Learing](#what-is-machine-learning-rice_ball)
 * [Supervised vs. Unsupervised Machine Learning](#supervised-and-unsupervised-machine-learning-bread)
-* [SVM](#svm-bento)
 
 ----
 ### What is Machine Learning :rice_ball:
@@ -40,5 +43,3 @@
       — the idea that a computer can learn to identify complex processes and patterns without a human to 
       provide guidance along the way.
       #Learning from the unlabeled data to differentiating the given input data.
-      
-### SVM :bento:

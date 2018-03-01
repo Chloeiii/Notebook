@@ -1,19 +1,22 @@
 # Python
 Practice makes perfect
 
+----
+## Data Structure
+* [Priority Queue](http://www.bogotobogo.com/python/python_PriorityQueue_heapq_Data_Structure.php)
 
 ----
 ## Contents
 |  :yum: |  :yellow_heart:| :metal:  |
 | :------------:|:------------:|:------------:|
 | [Resources](#resources) | [Dictionary](#dictionary-peach) | [List](#list-strawberry) |
-| [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| [MachineLearning](#machine-learning-notes-panda_face) |
+| [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| [Class](#class-egg)|
 
 ----
 ## Resources
 * [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
 * [Sample plots in Matplotlib](https://matplotlib.org/tutorials/introductory/sample_plots.html)
-* [Matpltlib colors](https://matplotlib.org/users/colors.html)
+* [Matpltlib colors example](https://matplotlib.org/users/colors.html)
 * [matplotlib.colors documentation](https://matplotlib.org/api/colors_api.html)
 
 ----
@@ -213,18 +216,54 @@ Practice makes perfect
 
       7. save img
             plt.savefig('test.png', bbox_inches="tight", dpi = 300)
-
 ----
-## Machine Learning notes :panda_face:
-* [Machine Learning Tutorial for Beginners](https://www.kaggle.com/kanncaa1/machine-learning-tutorial-for-beginners)
-* [Random Forests](http://blog.yhat.com/posts/random-forests-in-python.html)
-* [Random Forest Classifier Example](https://chrisalbon.com/machine_learning/trees_and_forests/random_forest_classifier_example/)
+## Class :egg:
+* Definition Syntax
 
-      Random forest is a highly versatile machine learning method with numerous 
-      applications ranging from marketing to healthcare and insurance. It can 
-      be used to model the impact of marketing on customer acquisition, retention, 
-      and churn or to predict disease risk and susceptibility in patients.
+      class ClassName:
+          <statement-1>
+          .
+          .
+          <statement-N>
 
-      Random forest is capable of regression and classification. It can handle 
-      a large number of features, and it's helpful for estimating which of your 
-      variables are important in the underlying data being modeled.
+* Objects
+
+      1. 
+        class MyClass:
+            i = 12345
+            def f(self):
+                return 'hello world'
+
+      2.
+        x = MyClass() 
+
+      3.
+        def __init__(self):
+            self.data = []
+
+      4.
+        class Complex:
+            def __init__(self, realpart, imagpart):
+                self.r = realpart
+                self.i = imagpart
+
+        x = Complex(3.0, -4.5)
+        x.r, x.i
+        (3.0, -4.5)    
+
+      5. 
+        class Dog:
+            kind = 'canine'         # class variable shared by all instances
+            def __init__(self, name):
+                self.name = name    # instance variable unique to each instance
+
+        >>> d = Dog('Fido')
+        >>> e = Dog('Buddy')
+        >>> d.kind                  # shared by all dogs
+        'canine'
+        >>> e.kind                  # shared by all dogs
+        'canine'
+        >>> d.name                  # unique to d
+        'Fido'
+        >>> e.name                  # unique to e
+        'Buddy'
