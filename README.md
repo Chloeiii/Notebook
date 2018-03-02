@@ -16,8 +16,9 @@ Practice makes perfect
 ## Resources
 * [Matplotlib Bar chart examples](https://pythonspot.com/matplotlib-bar-chart/)
 * [Sample plots in Matplotlib](https://matplotlib.org/tutorials/introductory/sample_plots.html)
-* [Matpltlib colors example](https://matplotlib.org/users/colors.html)
-* [matplotlib.colors documentation](https://matplotlib.org/api/colors_api.html)
+* [Matpltlib colors](https://matplotlib.org/users/colors.html): some color example
+* [Matplotlib.colors documentation](https://matplotlib.org/api/colors_api.html): documentation
+* [Free online graphing calculator](https://www.desmos.com/calculator): from desmos.com.
 
 ----
 ## Dictionary :peach:

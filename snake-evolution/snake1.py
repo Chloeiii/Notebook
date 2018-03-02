@@ -1,3 +1,5 @@
+#works with 1 food and 0 enemies
+
 import bottle
 import os
 import random
