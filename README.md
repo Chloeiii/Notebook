@@ -163,6 +163,9 @@ Practice makes perfect
       Check variable type                  ->         isinstance(12, str) = False 
                                                       isinstance(1, int) = True
                                                       isinstance('aaaa', float) = False
+     
+      Percentage                           ->         percentage = '{0:.2f}'.format((num1 / num2 * 100))
+                                                      return percentage
 
 ----
 ## Matplotlib :green_apple:
@@ -217,6 +220,9 @@ Practice makes perfect
 
       7. save img
             plt.savefig('test.png', bbox_inches="tight", dpi = 300)
+        
+      8. plot table example
+            https://matplotlib.org/examples/pylab_examples/table_demo.html
 ----
 ## Class :egg:
 * Definition Syntax
