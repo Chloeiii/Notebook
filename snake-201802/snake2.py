@@ -38,7 +38,6 @@ def start():
         bottle.request.urlparts.netloc
     )
 
-    # TODO: Do things with data
     return {
         'color': '#E74C3C',
         'taunt': '{} ({}x{})'.format(game_id, board_width, board_height),
@@ -99,7 +98,7 @@ def move():
     #get the optional directions for the head (avoid walls and danger zone)
     directions = direction_options(head)
     
-    #find the direction towards the closest food)
+    #find the direction towards the closest food
     direction = find_best_direction(directions, head, my_food_list)
     return {
         'move': direction,
@@ -139,21 +138,7 @@ def set_walls(my_food_list,my_body_list, enemy_body_list):
             for next in head_next_location:
                 segx = next[0]
                 segy = next[1]
-            board[segx][segy] = 1   
-
-    # (这些值本来就是0啊？)
-    # 4. reset the board value of the enemy snake head if the enemy snake length < our snake length
-    # for each_enemy in enemy_body_list:
-    #     enemy_head = []
-    #     if each_enemy[-1] < my_body_list[-1]:
-    #         enemy_head.append(each_enemy[0][0])
-    #         enemy_head.append(each_enemy[0][1])
-    #         head_next_location = next_move_location(enemy_head)
-    #         #might return several possible location, so check each location
-    #         for next in head_next_location:
-    #             segx = next[0]
-    #             segy = next[1]
-    #         board[segx][segy] = 0
+            board[segx][segy] = 1
             
     return board
 
@@ -239,7 +224,6 @@ def find_best_direction(directions, head, my_food_list):
 #When snakes move 1 step, their tail positons will be open again, (unless get a food)
 def get_open_coordinates(my_food_list, my_body_list, enemy_body_list):
     open_coor =[]
-
     my_next_locations = next_move_location(my_body_list[0])
     common = 0
     for i in my_next_locations:

@@ -152,6 +152,10 @@ Practice makes perfect
       4. Check if a tring is in a list:
             if 'abc' in my_list:
 
+      5. Finding the index of an item given a list containing it
+            >>> ["foo", "bar", "baz"].index("bar")
+            1
+
 ----
 ## Variable Type :pineapple:
       String to Int(no rounding)           ->         int(float("23.5")) = 23
@@ -193,6 +197,7 @@ Practice makes perfect
                    title = 'donation amount',
                    shadow = True
                    )
+
           6.1. Multiple legends on the same Axes
                   http://matplotlib.org/users/legend_guide.html#multiple-legends-on-the-same-axes
 
@@ -214,9 +219,37 @@ Practice makes perfect
           6.2. Manually add legend items 
                   https://stackoverflow.com/questions/39500265/manually-add-legend-items-python-matplotlib
 
+          6.3. legend position:
+                  http://jb-blog.readthedocs.io/en/latest/posts/0012-matplotlib-legend-outdide-plot.html
+                  Note: if your legend is outside the box and is cut in half, set bbox_inches="tight" keyword argument!
+                        e.g.  plt.savefig('test.png', dpi = 300, bbox_inches="tight")
+
 
       7. save img
             plt.savefig('test.png', bbox_inches="tight", dpi = 300)
+
+      8. plots with different scales
+              import numpy as np
+              import matplotlib.pyplot as plt
+
+              fig, ax1 = plt.subplots()
+              t = np.arange(0.01, 10.0, 0.01)
+              s1 = np.exp(t)
+              ax1.plot(t, s1, 'b-')
+              ax1.set_xlabel('time (s)')
+              # Make the y-axis label, ticks and tick labels match the line color.
+              ax1.set_ylabel('exp', color='b')
+              ax1.tick_params('y', colors='b')
+
+              ax2 = ax1.twinx()
+              s2 = np.sin(2 * np.pi * t)
+              ax2.plot(t, s2, 'r.')
+              ax2.set_ylabel('sin', color='r')
+              ax2.tick_params('y', colors='r')
+
+              fig.tight_layout()
+              plt.show()
+
 ----
 ## Class :egg:
 * Definition Syntax
