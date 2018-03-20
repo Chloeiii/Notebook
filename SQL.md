@@ -1,4 +1,4 @@
-SQL-DailyExercise
+# SQL
 ****
 ### Operator Description
             =	        Equal
