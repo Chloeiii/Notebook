@@ -11,6 +11,7 @@ Practice makes perfect
 | :------------:|:------------:|:------------:|
 | [Resources](#resources) | [Dictionary](#dictionary-peach) | [List](#list-strawberry) |
 | [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| [Class](#class-egg)|
+| [File Transfer](#file-transfer-ramen) |||
 
 ----
 ## Resources
@@ -307,3 +308,17 @@ Practice makes perfect
         'Fido'
         >>> e.name                  # unique to e
         'Buddy'
+        
+----
+## File Transfer :ramen:
+* create a directory if not exist
+
+      if not os.path.exists(dir):
+          os.makedirs(dir)
+        
+* copy files to another directory
+
+      from shutil import copyfile
+      dst = '../../../aaa/'
+      src = 'bbb/test.png'
+      copyfile(src, dst)
