@@ -171,7 +171,16 @@ Practice makes perfect
      
       Percentage                           ->         percentage = '{0:.2f}'.format((num1 / num2 * 100))
                                                       return percentage
-
+                                                   
+      check if a string contains           ->         if "blah" not in somestring: 
+      substring or not                                  continue
+      
+                                                      s = "This be a string"
+                                                      if s.find("is") == -1:
+                                                          print "No 'is' here!"
+                                                      else:
+                                                          print "Found 'is' in the string."
+                                                   
 ----
 ## Matplotlib :green_apple:
       1. plt bar chart sample(vertical):
