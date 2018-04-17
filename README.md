@@ -11,7 +11,7 @@ Practice makes perfect
 | :------------:|:------------:|:------------:|
 | [Resources](#resources) | [Dictionary](#dictionary-peach) | [List](#list-strawberry) |
 | [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| [Class](#class-egg)|
-| [File Transfer](#file-transfer-ramen) |||
+| [File Transfer](#file-transfer-ramen) |[CSV](#csv-rabbit)||
 
 ----
 ## Resources
@@ -331,3 +331,38 @@ Practice makes perfect
       dst = '../../../aaa/'
       src = 'bbb/test.png'
       copyfile(src, dst)
+      
+----
+## CSV :rabbit:
+* Writing to a CSV (general case)
+
+      dic = {"John": "john@example.com", "Mary": "mary@example.com"} #dictionary
+
+      download_dir = "exampleCsv.csv" #where you want the file to be downloaded to 
+
+      csv = open(download_dir, "w") 
+      #"w" indicates that you're writing strings to the file
+
+      columnTitleRow = "name, email\n"
+      csv.write(columnTitleRow)
+
+      for key in dic.keys():
+            name = key
+            email = dic[key]
+            row = name + "," + email + "\n"
+            csv.write(row)
+        
+* Writing Strings With Commas or Line Breaks in Them
+
+      name = "Adams, John"
+      nameInQuotes = "\"" + name + "\""
+      csv.write(nameInQuotes)
+      
+* Writing Strings With Quotes In Them
+
+      name = "\"John\""
+
+      name = name.replace("\"", "\"\"") #Python's string replace function
+
+      nameInQuotes = "\"" + name + "\""
+      csv.write(nameInQuotes)
