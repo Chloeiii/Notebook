@@ -76,3 +76,16 @@ EX3:
          1  2  0.0  1.0  0.0  1.0
          2  3  1.0  0.0  1.0  0.0
 '''
+
+
+
+
+'''
+MYCODE:
+
+         def test(fin, fout):
+                  df = pd.read_csv(fin)
+                  cols_to_transform = ['BIO_Marital_Status_Category', 'BIO_Title_Category']
+                  df_with_dummies = pd.get_dummies(data=df, columns=cols_to_transform)
+                  df_with_dummies.to_csv(fout, encoding='utf-8', index=False) #store DataFram object into a csv file
+'''
