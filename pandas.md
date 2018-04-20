@@ -1,6 +1,6 @@
-# binarize the data
-
-'''
+# Pandas
+****
+### Convert categorical variable into dummy/indicator variables
 EX1:
          df = DataFrame({'A': ['a', 'b', 'a'], 'B': ['c', 'c', 'b'], 'C': [1, 2, 3]})
          df
@@ -16,15 +16,8 @@ EX1:
          0  1    1    0    0    1
          1  2    0    1    0    1
          2  3    1    0    1    0
-'''
 
 
-
-
-
-
-
-'''
 EX2: You can do it for each column seperate and then concat the results:
          
          df
@@ -51,15 +44,8 @@ EX2: You can do it for each column seperate and then concat the results:
          5  1  0  0  0  1  0
          6  0  1  0  0  1  0
          7  0  0  1  0  0  1
-'''
 
 
-
-
-
-
-
-'''
 EX3:
          pd.get_dummies(data=df, columns=['A', 'B'])
          df
@@ -75,17 +61,20 @@ EX3:
          0  1  1.0  0.0  0.0  1.0
          1  2  0.0  1.0  0.0  1.0
          2  3  1.0  0.0  1.0  0.0
-'''
 
-
-
-
-'''
 MYCODE:
 
          def test(fin, fout):
                   df = pd.read_csv(fin)
                   cols_to_transform = ['BIO_Marital_Status_Category', 'BIO_Title_Category']
                   df_with_dummies = pd.get_dummies(data=df, columns=cols_to_transform)
-                  df_with_dummies.to_csv(fout, encoding='utf-8', index=False) #store DataFram object into a csv file
-'''
+                  #store DataFram object into a csv file
+                  df_with_dummies.to_csv(fout, encoding='utf-8', index=False) 
+
+
+            
+****
+### Add values in pandas.DataFrame
+            SELECT column1, column2, ...
+            FROM table_name
+            ORDER BY column1, column2, ... ASC|DESC;
