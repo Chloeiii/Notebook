@@ -74,22 +74,16 @@ MYCODE:
 
             
 ****
-### Add values in pandas.DataFrame :dizzy_face:
-            Create a list of dictionaries, where each dictionary corresponds to an input data row. 
-            Once the list is complete, then create a data frame. This is a much faster approach.
+### Iterate and add values in pandas.DataFrame :dizzy_face:
 
-            I had a similar problem where if I created a data frame for each row and appended it 
-            to the main data frame it took 30 mins. On the other hand, if I used the below methodology, 
-            it was successful within seconds.
+MYCODE:
 
-            rows_list = []
-            for row in input_rows:
-
-                    dict1 = {}
-                    # get input row in dictionary format
-                    # key = col_name
-                    dict1.update(blah..) 
-
-                    rows_list.append(dict1)
-
-            df = pd.DataFrame(rows_list)      
+         def setlabel(file):
+                  df = pd.read_csv(file)
+                  df['label_2016'] = ''
+                  for index, row in df.iterrows():
+                           if row['Largest_Gift_before_2016']>25000 or row['Total_Gift_before_2016']>100000:
+                                    df.set_value(index, 'label_2016', 1)
+                           else:
+                                    df.set_value(index, 'label_2016', 0)
+                  df.to_csv(file, encoding='utf-8', index=False)
