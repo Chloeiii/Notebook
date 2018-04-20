@@ -168,6 +168,8 @@ Practice makes perfect
       Check variable type                  ->         isinstance(12, str) = False 
                                                       isinstance(1, int) = True
                                                       isinstance('aaaa', float) = False
+                                                      
+                                           ->         print(type(x))
      
       Percentage                           ->         percentage = '{0:.2f}'.format((num1 / num2 * 100))
                                                       return percentage
