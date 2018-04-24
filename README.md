@@ -182,6 +182,22 @@ Practice makes perfect
                                                           print "No 'is' here!"
                                                       else:
                                                           print "Found 'is' in the string."
+                                                          
+                                                          
+      Use either a.item() or np.asscalar(a) to convert most NumPy values to a native Python type:
+                                           ->
+                                                      import numpy as np
+                                                      # examples using a.item()
+                                                      type(np.float32(0).item()) # <type 'float'>
+                                                      type(np.float64(0).item()) # <type 'float'>
+                                                      type(np.uint32(0).item())  # <type 'long'>
+                                                      # examples using np.asscalar(a)
+                                                      type(np.asscalar(np.int16(0)))   # <type 'int'>
+                                                      type(np.asscalar(np.cfloat(0)))  # <type 'complex'>
+                                                      type(np.asscalar(np.datetime64(0, 'D')))  # <type 'datetime.datetime'>
+                                                      type(np.asscalar(np.timedelta64(0, 'D'))) # <type 'datetime.timedelta'>
+                                                      ...
+
                                                    
 ----
 ## Matplotlib :green_apple:
