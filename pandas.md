@@ -87,3 +87,18 @@ MYCODE:
                            else:
                                     df.set_value(index, 'label_2016', 0)
                   df.to_csv(file, encoding='utf-8', index=False)
+
+****
+### [Dropping rows and columns in pandas Datafram](https://chrisalbon.com/python/data_wrangling/pandas_dropping_column_and_rows/) :feet:
+
+MYCODE (drop rows with specific values):
+
+	df1 = dftmp[dftmp.BIO_Age == -1]#2016 without age
+	df2 = dftmp[dftmp.BIO_Age != -1]#2016 with age
+	df3 = dftmp[dftmp.BIO_Age == -1]#2017 without age
+	df4 = dftmp[dftmp.BIO_Age != -1]#2017 with age
+         
+e.g.(Drop a column):
+
+         df.drop('reports', axis=1) #axis=1 denotes that we are referring to a column, not a row
+
