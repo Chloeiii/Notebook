@@ -11,7 +11,7 @@ Practice makes perfect
 | :------------:|:------------:|:------------:|
 | [Resources](#resources) | [Dictionary](#dictionary-peach) | [List](#list-strawberry) |
 | [Variable Type](#variable-type-pineapple) | [Matpltlib](#matplotlib-green_apple)| [Class](#class-egg)|
-| [File Transfer](#file-transfer-ramen) |[CSV](#csv-rabbit)||
+| [File Transfer](#file-transfer-ramen) |[CSV](#csv-rabbit)|[Other](#other-woman)|
 
 ----
 ## Resources
@@ -384,3 +384,14 @@ Practice makes perfect
 
       nameInQuotes = "\"" + name + "\""
       csv.write(nameInQuotes)
+    
+----
+## Other :woman:
+* Calculate program running time
+
+      import timeit
+
+      start = timeit.default_timer()
+      #Your statements here
+      stop = timeit.default_timer()
+      print ('Processing time is: ', stop - start)
