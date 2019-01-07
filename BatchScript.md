@@ -65,3 +65,10 @@ Scripting is a way by which one can alleviate this necessity by automating these
       
       13150
       5
+
+### Multiline comments
+    GOTO EndComment1
+    This line is comment.
+    And so is this line.
+    And this one...
+    :EndComment1
