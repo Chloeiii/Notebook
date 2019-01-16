@@ -395,3 +395,14 @@ Practice makes perfect
       #Your statements here
       stop = timeit.default_timer()
       print ('Processing time is: ', stop - start)
+      
+* throw an error window - TkInter message box
+
+      -----------------Python 3.x------------------
+      from tkinter import messagebox
+      messagebox.showinfo("Title", "a Tk MessageBox")
+      
+      -----------------Python 2.7------------------
+      import Tkinter
+      import tkMessageBox
+      tkMessageBox.showinfo("Title", "a Tk MessageBox")
