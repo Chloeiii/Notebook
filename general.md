@@ -21,7 +21,7 @@ This is an incredibly easy language to learn, one of the easiest. Python special
 This isn't exactly software development, but PHP is essential if you are interested in getting into web development. There is always lots of work for PHP developers, though it isn't as lucrative as software development.
 
 > Java, Python, C++, Visual Basic .NET and Ruby are the most popular OOP languages today. The Java programming language is designed especially for use in distributed applications on corporate networks and the Internet. Ruby is used in many Web applications
-
+----
 ## HTTP & HTTPS:nail_care:
 HTTP stands for "hypertext transfer protocol", a method of data communication for the Internet. HTTP is an application layer protocol, which means it focus on how information is presented to the user at the computer but doesn't address how data gets from Point A to Point B. Any data transferred with the HTTP protocol can potentially be intercepted and even manipualated by third parties.  
 
@@ -31,4 +31,74 @@ HTTPS is an extension of the HTTP protocol that works in conjunction with anothe
 People often use the terms HTTPS and SSL interchangeably, but this isn't accurate. HTTPS is secure because it uses SSL to move data. As SSL involved, it was replaced by TLS, or Transport Layer Security - an even more secure way of encrypting information.
 
 > HTTPS: encrypted password
+----
+## Client-Side vs Server-Side Programming Languages:cat2:
+- Basic Background  
+Web development is all about communication and data exchange. This communication takes place via two parties over the HTTP protocol.
 
+
+----
+## Client-Side vs Server-Side Programming Languages:cat2:
+- Basic Background  
+Web development is all about communication and data exchange. This communication takes place via two parties over the HTTP protocol.
+- Server  
+The Server is responsible for serving the web pages depending on the client/end user requirement. It can be either static or dynamic.
+- Client  
+A client is a party that requests pages from the server and displays them to the end user. In general a client program is a web browser.
+
+- Example | Working  
+  
+		We can explain this entire mechanism using the following:
+
+		-   The user opens his web browser (client)
+		-   The user starts browsing  
+		
+		-   The client forwards this request to the server, for accessing their web page.
+		-   The server then acknowledges the request and replies back to the client program.  
+		      
+		    (An access link to that web page)  
+		    
+		-   The client then receives the page source and renders it.  
+		      
+		    (Into a viewable/under a stable website)  
+		    
+		-   Now the user types into search bar
+		-   The client then submits data to the server
+		-   The server processes the data and replies back with a related search result
+		-   The client again renders it back for the user's view
+		-   The user gets access to the requested link.
+
+- Server-side | Uses
+	-   It processes the user input
+	-   Displays the requested pages
+	-   Structure web applications
+	-   Interaction with servers/storages
+	-   Interaction with databases
+	-   Querying the database
+	-   Encoding of data into HTML
+	-   Operations over databases like delete, update.
+
+- Server-side | Languages Example    
+	-   PHP
+	-   ASP.NET (C# OR Visual Basic)
+	-   C++
+	-   Java and JSP
+	-   Python
+	-   Ruby on Rails and so on.
+
+- Client-side | Uses
+	-   Makes interactive web pages
+	-   Make stuffs work dynamically
+	-   Interact with temporary storage
+	-   Works as an interface between user and server
+	-   Sends requests to the server
+	-   Retrieval of data from Server
+	-   Interact with local storage
+	-   Provides remote access for client server program
+- Client-side | Languages Example   
+	-   JavaScript
+	-   VBScript
+	-   HTML (Structure)
+	-   CSS (Designing)
+	-   AJAX
+	-   jQuery etc.
