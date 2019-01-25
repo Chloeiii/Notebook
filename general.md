@@ -31,11 +31,6 @@ HTTPS is an extension of the HTTP protocol that works in conjunction with anothe
 People often use the terms HTTPS and SSL interchangeably, but this isn't accurate. HTTPS is secure because it uses SSL to move data. As SSL involved, it was replaced by TLS, or Transport Layer Security - an even more secure way of encrypting information.
 
 > HTTPS: encrypted password
-----
-## Client-Side vs Server-Side Programming Languages:cat2:
-- Basic Background  
-Web development is all about communication and data exchange. This communication takes place via two parties over the HTTP protocol.
-
 
 ----
 ## Client-Side vs Server-Side Programming Languages:cat2:
