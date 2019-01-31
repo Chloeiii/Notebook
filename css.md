@@ -1,3 +1,4 @@
+:art:
 ## Position
 - static
 
@@ -16,4 +17,23 @@
 
     positioned based on the user's **scroll position**.
     
-    
+## [Table Borders](https://www.w3schools.com/css/css_table.asp)
+- Regular
+
+        table, th, td {
+          border: 1px solid black;
+        }
+- Collapse
+
+        table {
+          border-collapse: collapse;
+        }
+
+        table, th, td {
+          border: 1px solid black;
+        }
+- a border around the table
+
+        table {
+          border: 1px solid black;
+        }
