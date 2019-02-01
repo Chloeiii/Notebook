@@ -1,3 +1,6 @@
+## Table of Contents:  
+- [Programming Languages](#programming-languages-ghost)
+----
 ## Programming Languages:ghost:
  **C**  
 C is one of the older languages still in use, and is the basis for most of the other languages on this list. C is used to develop low-level programs, and works very closely with the computer's hardware.
