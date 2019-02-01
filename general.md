@@ -1,5 +1,8 @@
 ## Table of Contents:  
-- [Programming Languages](#programming-languages-ghost)
+- [Programming Languages](#programming-languagesghost)
+- [HTTP & HTTPS](#http--httpsnail_care)
+- [Client-Side vs Server-Side Programming Languages](#client-side-vs-server-side-programming-languagescat2)
+- [Web Servers](#web-serversschool_satchel)
 ----
 ## Programming Languages:ghost:
  **C**  
