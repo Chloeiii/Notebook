@@ -1,31 +1,3 @@
-## IIS :school_satchel:
-the most popular web server software for microsoft computers is IIS. if its not already running, follow the instructions below to get things set up.
-
-https://msdn.microsoft.com/en-us/library/ms181052(v=vs.80).aspx
-
-Note Other webserver: https://gist.github.com/jgravois/5e73b56fa7756fd00b89
-
-
-## SimpleHTTPServer (a Pythonic approach) :mrs_claus:
-
-Python comes preinstalled on Macs (and is installed on Windows with ArcGIS Software) so it's  [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  module is an  **excellent**  choice.
-
-1.  navigate into the folder where you plan on saving your  `.html`  files (using terminal/cmd) and execute the following command:
-    
-        python -m SimpleHTTPServer 1337
-    
-    if you're using Python 3.x or higher, you'd use
-    
-        python -m http.server 1337
-    
-2.  now you should be able to access your own files via  [http://localhost:1337/myfile.html](http://localhost:1337/myfile.html)  in Chrome, Firefox or any other web browser.
-    
-
-        <html>
-          <body>
-            <h1>i'm web serving!</h1>
-          </body>
-        </html>
 
 
 ****
