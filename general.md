@@ -8,13 +8,13 @@ This is the object-oriented version of C, and is the most popular programming la
  **Java**  
 This is an evolution of the C++ language, and is used to due its ease of portability. Almost any system can run a Java Virtual Machine, allowing it to run Java software. It is widely used in video games and business software, and many people recommend it as an essential language.
 
- **C#** 
+ **C#**   
 C# is a Windows-based language that is part of the .NET framework from Microsoft. It is closely related to Java and C++, and if you learn Java you can quickly transition to C#. This language is especially useful for developers working with Windows or Windows Phone software.
 
-**Objective-C** 
+**Objective-C**   
 This is another cousin of the C language that is specifically designed for Apple systems. It sees immense popularity in iPhone and iPad apps. It is a great language to learn as a freelancer.
 
-**Python** 
+**Python**    
 This is an incredibly easy language to learn, one of the easiest. Python specializes in web development.
 
  **PHP**  
@@ -97,3 +97,49 @@ A client is a party that requests pages from the server and displays them to the
 	-   CSS (Designing)
 	-   AJAX
 	-   jQuery etc.
+----
+## Web Servers:school_satchel:
+#### IIS 
+the most popular web server software for microsoft computers is IIS. if its not already running, follow the instructions below to get things set up.
+
+https://msdn.microsoft.com/en-us/library/ms181052(v=vs.80).aspx
+
+#### SimpleHTTPServer (a Pythonic approach)
+1.  navigate into the folder where you plan on saving your  `.html`  files (using terminal/cmd) and execute the following command:
+    
+        python -m SimpleHTTPServer 1337
+    
+    if you're using Python 3.x or higher, you'd use
+    
+        python -m http.server 1337
+    
+2.  now you should be able to access your own files via  [http://localhost:1337/myfile.html](http://localhost:1337/myfile.html)  in Chrome, Firefox or any other web browser.
+    
+
+        <html>
+          <body>
+            <h1>i'm web serving!</h1>
+          </body>
+        </html>
+
+#### Node.js web server
+Once you have installed Node, let's try building our first web server. Create a file named "app.js", and paste the following code:
+
+	const http = require('http');
+
+	const hostname = '127.0.0.1';
+	const port = 3000;
+
+	const server = http.createServer((req, res) => {
+	  res.statusCode = 200;
+	  res.setHeader('Content-Type', 'text/plain');
+	  res.end('Hello World\n');
+	});
+
+	server.listen(port, hostname, () => {
+	  console.log(`Server running at http://${hostname}:${port}/`);
+	});
+	
+After that, run your web server using node app.js, visit http://localhost:3000, and you will see a message 'Hello World'
+#### Other webserver
+https://gist.github.com/jgravois/5e73b56fa7756fd00b89
