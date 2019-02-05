@@ -83,3 +83,5 @@
 - **tests/** – tests everything which is in the other folders
 - **app.js** – initializes the app and glues everything together
 - **package.json** – remembers all packages that your app depends on and their versions
+
+![](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)
