@@ -37,3 +37,49 @@
 		$ node server.js 
 
 - Open http://127.0.0.1:8081/ in any browser to see the result.
+
+----
+## Express File Structure Example
+(an application where a user can login, register and leave a comment for everyone to admire)
+
+	project/
+	  controllers/
+	    comments.js
+	    index.js
+	    users.js
+	  helpers/
+	    dates.js
+	  middlewares/
+	    auth.js
+	    users.js
+	  models/
+	    comment.js
+	    user.js
+	  public/
+	    libs/
+	    css/
+	    img/
+	  views/
+	    comments/
+	      comment.jade
+	    users/
+	    index.jade
+	  tests/
+	    controllers/
+	    models/
+	      comment.js
+	    middlewares/
+	    integration/
+	    ui/
+	  .gitignore
+	  app.js
+	  package.json
+- **controllers/** – defines your app routes and their logic
+- **helpers/** – code and functionality to be shared by different parts of the project
+- **middlewares/** – Express middlewares which process the incoming requests before handling them down to the routes
+- **models/** – represents data, implements business logic and handles storage
+- **public/** – contains all static files like images, styles and javascript
+- **views/** – provides templates which are rendered and served by your routes
+- **tests/** – tests everything which is in the other folders
+- **app.js** – initializes the app and glues everything together
+- **package.json** – remembers all packages that your app depends on and their versions
