@@ -39,54 +39,52 @@
 - Open http://127.0.0.1:8081/ in any browser to see the result.
 
 ----
-## Express File Structure Example
+## Express Project Structure Example
 [create a skeleton website](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website)  
 (an application where a user can login, register and leave a comment for everyone to admire)
 
 	project/
-	  controllers/
-	    comments.js
-	    index.js
-	    users.js
-	  helpers/
-	    dates.js
-	  middlewares/
-	    auth.js
-	    users.js
-	  models/
-	    comment.js
-	    user.js
-	  public/
-	    libs/
-	    css/
-	    img/
-	  views/
-	    comments/
-	      comment.jade
-	    users/
-	    index.jade
-	  tests/
-	    controllers/
-	    models/
-	      comment.js
-	    middlewares/
-	    integration/
-	    ui/
-	  .gitignore
-	  app.js
-	  package.json
+		routes/
+			index.js
+	 	controllers/
+			comments.js
+			index.js
+			users.js
+	  	views/
+			comments/
+				comment.jade
+			users/
+			index.jade
+
+	  	models/
+			comment.js
+			user.js
+	 	bin/
+			www
+	  	public/
+			libs/
+			css/
+			img/
+	  	tests/
+			controllers/
+			models/
+				comment.js
+			integration/ 
+	  	.gitignore
+	  	app.js
+	  	package.json
+		
+- **routes/** –import controllers and chain together the functions
 - **controllers/** – defines your app routes and their logic
-- **helpers/** – code and functionality to be shared by different parts of the project
-- **middlewares/** – Express middlewares which process the incoming requests before handling them down to the routes
-- **models/** – represents data, implements business logic and handles storage
-- **public/** – contains all static files like images, styles and javascript
 - **views/** – provides templates which are rendered and served by your routes
+- **models/** – data access layer/ models, put code to call database
+- **bin/** – define port, create HTTP server, and listen on the port
+- **public/** – contains all static files like images, styles and javascript
 - **tests/** – tests everything which is in the other folders
-- **app.js** – initializes the app and glues everything together
+- **app.js** – initializes the app and glues everything together, exports app object at the last
 - **package.json** – remembers all packages that your app depends on and their versions
 
 ![](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)  
 
 ----
-## [npm basic commands](http://dreamerslab.com/blog/en/npm-basic-commands/)
 
