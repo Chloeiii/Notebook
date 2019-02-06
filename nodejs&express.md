@@ -55,10 +55,6 @@
 				comment.jade
 			users/
 			index.jade
-
-	  	models/
-			comment.js
-			user.js
 	 	bin/
 			www
 	  	public/
@@ -77,7 +73,6 @@
 - **routes/** –import controllers and chain together the functions
 - **controllers/** – defines your app routes and their logic
 - **views/** – provides templates which are rendered and served by your routes
-- **models/** – data access layer/ models, put code to call database
 - **bin/** – define port, create HTTP server, and listen on the port
 - **public/** – contains all static files like images, styles and javascript
 - **tests/** – tests everything which is in the other folders
