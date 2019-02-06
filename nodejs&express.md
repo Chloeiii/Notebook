@@ -40,6 +40,7 @@
 
 ----
 ## Express File Structure Example
+[create a skeleton website](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website)  
 (an application where a user can login, register and leave a comment for everyone to admire)
 
 	project/
@@ -84,4 +85,4 @@
 - **app.js** – initializes the app and glues everything together
 - **package.json** – remembers all packages that your app depends on and their versions
 
-![](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)
+![](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)  
