@@ -86,3 +86,7 @@
 - **package.json** – remembers all packages that your app depends on and their versions
 
 ![](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)  
+
+----
+## [npm basic commands](http://dreamerslab.com/blog/en/npm-basic-commands/)
+
