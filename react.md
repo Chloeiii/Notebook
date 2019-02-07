@@ -24,3 +24,22 @@
       npm start
 - navigate to **src/App.js**, and start render our chart...
 :fire::fire::fire:
+----
+## Example I
+    ReactDOM.render(
+      <h1>Hello, world!</h1>,
+      document.getElementById('root')
+    );
+It displays a heading saying “Hello, world!” on the page.    
+## Example II
+    class HelloMessage extends React.Component {
+      render() {
+        return <div>Hello {this.props.name}</div>;
+      }
+    }
+
+    ReactDOM.render(
+      <HelloMessage name="Taylor" />,
+      document.getElementById('container')
+    );
+This example will render "Hello Taylor" into a container on the page.    
