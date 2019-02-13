@@ -14,7 +14,7 @@
 	uses HTTP requests to GET, PUT, POST and DELETE data.
 
 ----
-## Environment Setup Sample
+## Environment Setup Sample:kiss:
 - [install nodejs](https://nodejs.org/en/)
 - Install express framework using NPM
 
@@ -39,7 +39,7 @@
 - Open http://127.0.0.1:8081/ in any browser to see the result.
 
 ----
-## Express Project Structure Example
+## Express Project Structure Example:sunny:
 [create a skeleton website](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website)  
 (an application where a user can login, register and leave a comment for everyone to admire)
 
