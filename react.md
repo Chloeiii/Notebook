@@ -45,64 +45,72 @@ It displays a heading saying “Hello, world!” on the page.
 This example will render "Hello Taylor" into a container on the page.    
 
 ## Syntax of Creating React Components
-        /**
-         * This is how you import stuff.  In this case you're actually 
-         * importing two things:  React itself and just the "Component" 
-         * part from React.  Importing the "Component" part by itself makes it
-         * so that you can do something like:
-         *
-         * class MyComponent extends Component ...
-         * 
-         * instead of...
-         * 
-         * class MyComponent extends React.Component
-         * 
-         * Also note the comma below
-         */
+    /**
+     * This is how you import stuff.  In this case you're actually 
+     * importing two things:  React itself and just the "Component" 
+     * part from React.  Importing the "Component" part by itself makes it
+     * so that you can do something like:
+     *
+     * class MyComponent extends Component ...
+     * 
+     * instead of...
+     * 
+     * class MyComponent extends React.Component
+     * 
+     * Also note the comma below
+     */
          
-        import React, {Component} from 'react';
+import React, {Component} from 'react';
 
-
-        /**
-         * This is a "default" export.  That means when you import 
-         * this module you can do so without needing a specific module
-         * name or brackets, e.g.
-         * 
-         * import Header from './header';
-         *
-         * instead of...
-         *
-         * import { Header } from './header';
-         */
+    /**
+     * This is a "default" export.  That means when you import 
+     * this module you can do so without needing a specific module
+     * name or brackets, e.g.
+     * 
+     * import Header from './header';
+     *
+     * instead of...
+     *
+     * import { Header } from './header';
+     */
          
-        export default class Header extends Component {
+export default class Header extends Component {}
 
-        }
-
-        /**
-         * This is a named export.  That means you must explicitly
-         * import "Header" when importing this module, e.g.
-         *
-         * import { Header } from './header';
-         *
-         * instead of...
-         * 
-         * import Header from './header';
-         */
+    /**
+     * This is a named export.  That means you must explicitly
+     * import "Header" when importing this module, e.g.
+     *
+     * import { Header } from './header';
+     *
+     * instead of...
+     * 
+     * import Header from './header';
+     */
          
-        export const Header = React.createClass({
+export const Header = React.createClass({})
 
-        })
+    /**
+     * This is another "default" export, only just with a 
+     * little more shorthand syntax.  It'd be functionally 
+     * equivalent to doing:
+     *
+     * const MyClass = React.createClass({ ... });
+     * export default MyClass;
+     */
 
-        /**
-         * This is another "default" export, only just with a 
-         * little more shorthand syntax.  It'd be functionally 
-         * equivalent to doing:
-         *
-         * const MyClass = React.createClass({ ... });
-         * export default MyClass;
-         */
-         
-        export default React.createClass({
+export default React.createClass({})
 
-        })
+
+
+## [Fetch Data](https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/)
+to be clear, the *render* function is never a good place to fetch data – or to do anything that’s asynchronous, that changes state in some way, or that causes side effects. The only thing *render* should do is return some JSX to display, and maybe spend a few lines preparing that data to display.
+
+-  componentDidMount
+	
+	By the time  `componentDidMount`  is called, the component has been rendered once.
+
+	In practice,  `componentDidMount`  is  **the best place to put calls to fetch data**, for two reasons:
+
+	1.  Using  **did**Mount makes it clear that data won’t be loaded until  _after_  the initial render. This reminds you to set up initial  `state`  properly, so you don’t end up with  [undefined state that causes errors](https://daveceddia.com/watch-out-for-undefined-state).
+	    
+	2.  If you ever need to render your app on the server (a.k.a. server-side-rendering/SSR with  [Next.js](https://nextjs.org/)  or similar),  `componentWillMount`  will actually be called  _twice_  – once on the server, and again on the client – which is probably not what you want. Putting your API call code in  `componentDidMount`  will ensure that data is only fetched from the  _client_, where it should be.
