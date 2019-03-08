@@ -36,3 +36,9 @@ select elements from an array
 
     console.log(animals.slice(1, 5));
     // expected output: Array ["bison", "camel", "duck", "elephant"]
+
+****
+## [Arrow Functions](https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc)
+- Shorter Syntax
+- No binding of *this*
+- [Arrow functions in React](https://medium.com/@oleg008/arrow-functions-in-react-f782d11460b4)
