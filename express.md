@@ -41,6 +41,7 @@
 ----
 ## Express Project Structure Example:sunny:
 [create a skeleton website](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website)  
+[write a production-ready node and express app](https://medium.freecodecamp.org/how-to-write-a-production-ready-node-and-express-app-f214f0b17d8c)
 (an application where a user can login, register and leave a comment for everyone to admire)
 
 	project/
