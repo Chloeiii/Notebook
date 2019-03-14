@@ -5,6 +5,7 @@
 - [Array](#array)
 - [Arrow Functions](#arrow-functions)
 - [EventListener](#eventlistener)
+- [Get Elements](#get-elements)
 
 ### Document Object Model (DOM)
 When a HTML page is loaded by a browser, it is converted to a hierarchical structure. Every tag in HTML is converted to an element / object in the DOM with a parent-child hierarchy. It makes our HTML more logically structured. Once the DOM is formed, it becomes easier to manipulate (add/modify/remove) the elements on the page.
@@ -101,3 +102,19 @@ https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc
 
         element.addEventListener("click", function(){ myFunction(p1, p2); });
 - [events](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+### Get Elements
+- by id
+
+      const elem = document .getElementById("xyz");
+- by tag name
+        
+      The tag_name is "div", "span", "p", etc.  
+      const list = document .getElementsByTagName("p");
+- by class
+
+      const list = document .getElementsByClassName("abc");
+- by name
+
+      <input name="xyz" type="text" size="20">
+      const xyz = document .getElementsByName("xyz");
