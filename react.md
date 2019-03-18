@@ -1,6 +1,6 @@
 ## Definition :monkey_face:
 [React](https://reactjs.org/)
-
+[React cheetsheet](https://devhints.io/react)
     React (also known as React.js or ReactJS) is a JavaScript library 
     that makes developing interactive user interfaces simple.
 
