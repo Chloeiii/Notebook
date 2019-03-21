@@ -3,8 +3,11 @@
 - [HTTP & HTTPS](#http--httpsnail_care)
 - [Client-Side vs Server-Side Programming Languages](#client-side-vs-server-side-programming-languagescat2)
 - [Web Servers](#web-serversschool_satchel)
+- [Git vs SVN](#git-vs-svn)
+
+
 ----
-## Programming Languages:ghost:
+### Programming Languages:ghost:
  **C**  
 C is one of the older languages still in use, and is the basis for most of the other languages on this list. C is used to develop low-level programs, and works very closely with the computer's hardware.
 
@@ -28,7 +31,7 @@ This isn't exactly software development, but PHP is essential if you are interes
 
 > Java, Python, C++, Visual Basic .NET and Ruby are the most popular OOP languages today. The Java programming language is designed especially for use in distributed applications on corporate networks and the Internet. Ruby is used in many Web applications
 ----
-## HTTP & HTTPS:nail_care:
+### HTTP & HTTPS:nail_care:
 HTTP stands for "hypertext transfer protocol", a method of data communication for the Internet. HTTP is an application layer protocol, which means it focus on how information is presented to the user at the computer but doesn't address how data gets from Point A to Point B. Any data transferred with the HTTP protocol can potentially be intercepted and even manipualated by third parties.  
 
 > HTTP: no passoword encryption implemented
@@ -39,7 +42,7 @@ People often use the terms HTTPS and SSL interchangeably, but this isn't accurat
 > HTTPS: encrypted password
 
 ----
-## Client-Side vs Server-Side Programming Languages:cat2:
+### Client-Side vs Server-Side Programming Languages:cat2:
 - Basic Background  
 Web development is all about communication and data exchange. This communication takes place via two parties over the HTTP protocol.
 - Server  
@@ -104,7 +107,7 @@ A client is a party that requests pages from the server and displays them to the
 	-   AJAX
 	-   jQuery etc.
 ----
-## Web Servers:school_satchel:
+### Web Servers:school_satchel:
 #### IIS 
 the most popular web server software for microsoft computers is IIS. if its not already running, follow the instructions below to get things set up.
 
@@ -149,3 +152,15 @@ Once you have installed Node, let's try building our first web server. Create a 
 After that, run your web server using node app.js, visit http://localhost:3000, and you will see a message 'Hello World'
 #### Other webserver
 https://gist.github.com/jgravois/5e73b56fa7756fd00b89
+
+----
+### Git vs SVN 
+	SVN is a Centralized Version Control System (CVCS), and Git is a Distributed Version Control System (DVCS).
+
+	A centralized version control system operates on the basic idea that there is one single copy of the project 
+	that developers will commit changes to, and where all version of the project are stored.
+
+	A distributed version control system, however, works on the principle that each developer “clones” the 
+	project repository to their hard drive. A copy of the project is stored on every developer’s local machine, 
+	and changes are either “pushed” up to the online repository, or “pulled” down from the repo to update the 
+	version that the developer has on their machine.
