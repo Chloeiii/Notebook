@@ -4,6 +4,7 @@
 - [Client-Side vs Server-Side Programming Languages](#client-side-vs-server-side-programming-languagescat2)
 - [Web Servers](#web-serversschool_satchel)
 - [Git vs SVN](#git-vs-svn)
+- [OOP - Object-Oriented Programming](#oop)
 
 
 ----
@@ -164,3 +165,74 @@ https://gist.github.com/jgravois/5e73b56fa7756fd00b89
 	project repository to their hard drive. A copy of the project is stored on every developer’s local machine, 
 	and changes are either “pushed” up to the online repository, or “pulled” down from the repo to update the 
 	version that the developer has on their machine.
+
+----
+### OOP
+
+    The four principles of object-oriented programming are:
+    {encapsulation, abstraction, inheritance, and polymorphism}
+- Encapsulation
+
+      Encapsulation is achieved when each object keeps its state private, inside a class. 
+      Other objects don’t have direct access to this state. Instead, they can only 
+      call a list of public functions — called methods.
+      
+      e.g.
+      -You can feed the cat. But you can’t directly change how hungry the cat is-
+      
+      Here the “state” of the cat is the private variables mood, hungry and energy. 
+      It also has a private method meow(). It can call it whenever it wants, 
+      the other classes can’t tell the cat when to meow.
+
+      What they can do is defined in the public methods sleep(), play() and feed(). 
+      Each of them modifies the internal state somehow and may invoke meow(). 
+      Thus, the binding between the private state and public methods is made.
+
+- Abstraction
+
+      Applying abstraction means that each object should only expose a high-level mechanism for using it.
+      
+      e.g.
+      You interact with your phone by using only a few buttons. 
+      What’s going on under the hood? You don’t have to know — implementation details are hidden. 
+      You only need to know a short set of actions.
+      
+      Implementation changes — for example, a software update — rarely affect the abstraction you use.
+
+- Inheritance
+
+      Objects are often very similar. They share common logic. But they’re not entirely the same.
+      So how do we reuse the common logic and extract the unique logic into a separate class? 
+      One way to achieve this is inheritance.
+      
+      e.g.
+                  person
+                /       \
+           Teacher      Student
+            /   \
+      private   public
+      teacher   teacher
+      
+- Polymorphism
+
+      Say we have a parent class and a few child classes which inherit from it. 
+      Sometimes we want to use a collection — for example a list — which contains a mix of all these classes. 
+      Or we have a method implemented for the parent class — but we’d like to use it for the children, too.
+      This can be solved by using polymorphism.
+      
+      e.g
+      reuse a common interface for calculating surface area and perimeter:
+      interface:
+        *CalculateSurface()
+        *CalculatePerimeter()
+        
+      Having these three figures inheriting the parent Figure Interface lets you create a list of 
+      mixed triangles, circles, and rectangles. And treat them like the same type of object.
+        
+      If you have a function which operates with a figure by using its parameter, 
+      you don’t have to define it three times — once for a triangle, a circle, and a rectangle.
+
+      You can define it once and accept a Figure as an argument. 
+      Whether you pass a triangle, circle or a rectangle — as long as they implement CalculateParamter(), 
+      their type doesn’t matter.
+
