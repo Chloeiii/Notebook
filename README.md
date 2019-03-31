@@ -2,6 +2,7 @@
 :cherries: General
 
 - [general](general.md)
+- [algorithms](algorithms.md):exclamation::exclamation::exclamation:
 
 :honey_pot: Front-end
 - [css](css.md)
@@ -10,16 +11,19 @@
 - [javascript d3 library](javascript-d3.md)
 
 :melon: Back-end
-- [express](express.md)
 - [java](https://github.com/Chloeiii/Leetcode/blob/master/README.md)
+  - including data structures
 - [python](python.md)
 - [python pandas library](python-pandas.md)
+- [express](express.md)
 
 :lemon: Database
 - [sql](sql.md)
 
 :pear: Other
 - [batch script](batch-script.md)
+
+
 
 
 
