@@ -279,6 +279,14 @@ ___
     if(node.left != null) nodes.offer(node.left);
     if(node.right != null) nodes.offer(node.right);
     
+    Set Node 1 as the start Node
+    Add this Node to the Queue
+    Add this Node to the visited set
+    If this node is our goal node then return true, else add Node 2 and Node 3 to our Queue
+    Check Node 2 and if it isn’t add both Node 4 and Node 5 to our Queue.
+    Take the next node from our Queue which should be Node 3 and check that.
+    If Node 3 isn’t our goal node add Node 6 and Node 7 to our Queue.
+    Repeat until goal Node is found.
 ___ 
 ### DFS
     pre-order traversal 
