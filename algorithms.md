@@ -2,7 +2,7 @@
 - [Quick Mort](#quicksort)
 - [Merge Sort](#mergesort)
 - [A*](#a-star)
-- [Binary Search]()
+- [Binary Search](#binary-search)
 - [Trees]()
 - [BFS](#bfs)
 - [DFS](#dfs)
@@ -228,7 +228,45 @@ Why A* Search Algorithm ?
         e) push q on the closed list
         end (while loop)    
     
+___ 
+### Binary Search
 
+O(logn)
+Given a sorted array arr[] of n elements, write a function to search a given element x in arr[].
+The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n)
+
+<img src = "https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png" width = 500>
+
+    1. Compare x with the middle element.
+    2. If x matches with middle element, we return the mid index.
+    3. Else If x is greater than the mid element, then x can only lie in right half subarray after the mid element. So we recur for right half.
+    4. Else (x is smaller) recur for the left half.
+Ex:
+
+    int binarySearch(int arr[], int l, int r, int x) 
+    { 
+        if (r >= l) { 
+            int mid = l + (r - l) / 2; 
+  
+            // If the element is present at the 
+            // middle itself 
+            if (arr[mid] == x) 
+                return mid; 
+  
+            // If element is smaller than mid, then 
+            // it can only be present in left subarray 
+            if (arr[mid] > x) 
+                return binarySearch(arr, l, mid - 1, x); 
+  
+            // Else the element can only be present 
+            // in right subarray 
+            return binarySearch(arr, mid + 1, r, x); 
+        } 
+  
+        // We reach here when element is not present 
+        // in array 
+        return -1; 
+    } 
 ___ 
 ### BFS
     List<Double> result = new ArrayList<>();
