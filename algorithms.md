@@ -1,7 +1,7 @@
 ### Table of Contents
 - [Quick Mort](#quicksort)
 - [Merge Sort](#mergesort)
-- [A*](#a*)
+- [A*](#a-star)
 - [Binary Search]()
 - [Trees]()
 - [BFS](#bfs)
@@ -177,7 +177,7 @@ Ex:
         } 
     } 
 ___ 
-### A*
+### A Star
 
 What is A* Search Algorithm?
 
