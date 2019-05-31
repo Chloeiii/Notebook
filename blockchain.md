@@ -88,15 +88,15 @@ Transaction data in the block can't be altered after-the-act
 
 ----
 #### Distributed Ledger
-All of the entities which need access to that ledger will maintain their own copies of it. But we'll need to insure the consistancy of each ledger. in this case, all the nodes need to constantly communication with each other. -> a blockchain network.  
--> need Ethereum Victual Machine
-EMS is responsible for
+All of the entities which need access to that ledger will maintain their own copies of it. And we'll need to insure the consistancy of each ledger. in this case, all the nodes need to constantly communication with each other. -> a blockchain network. -> need Ethereum Virtual Machine  
+
+EMS(Ethereum Virtual Machine) is responsible for  
 1. Exceting contract code
 2. Calculating transaction complexity
 3. verify transactions 
 
 Each node has a key pair
-- private key: used to sign (encrypt)
-- public key: used to verify (decrypt)
+1. private key: used to sign (encrypt)
+2. public key: used to verify (decrypt)
 
     
