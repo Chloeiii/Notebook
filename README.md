@@ -23,6 +23,8 @@
 :pear: Other
 - [batch script](batch-script.md)
 
+:strawberry: Technologies
+- [Blockchain & Ethereum](blockchain.md)
 
 
 
