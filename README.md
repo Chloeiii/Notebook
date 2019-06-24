@@ -3,6 +3,7 @@
 
 - [general](general.md)
 - [algorithms](algorithms.md):exclamation::exclamation::exclamation:
+- [server](Servers.md)
 
 :honey_pot: Front-end
 - [css](css.md)
