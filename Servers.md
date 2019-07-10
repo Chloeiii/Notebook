@@ -2,8 +2,8 @@
 - [HTTP & HTTPS](#http--httpsnail_care)
 - [Web Servers](#web-serversschool_satchel)
 - [IP && Domain Same && Port](#ip--domain-name--port-heart)
-- [Linux Commands](#linux-commands-art)
-- [Proxy vs Reverse Proxy :alien:](#proxy-vs-reverse-proxyalien)
+- [Linux Commands](#linux-commandsart)
+- [Proxy vs Reverse Proxy](#proxy-vs-reverse-proxy-alien)
 
 ----
 ### HTTP & HTTPS:nail_care:
