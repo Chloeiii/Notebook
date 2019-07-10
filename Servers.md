@@ -232,3 +232,8 @@ IP,（英语：Internet Protocol Address，又译为网际协议地址），缩�
 ----
 ### Proxy vs Reverse Proxy :alien:
 ![alt text](https://i.stack.imgur.com/0qpxZ.png)
+
+
+Forward Proxy: Acting on behalf of a requestor (or service consumer)
+
+Reverse Proxy: Acting on behalf of service/content producer.
