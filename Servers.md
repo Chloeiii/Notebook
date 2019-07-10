@@ -2,7 +2,8 @@
 - [HTTP & HTTPS](#http--httpsnail_care)
 - [Web Servers](#web-serversschool_satchel)
 - [IP && Domain Same && Port](#ip--domain-name--port-heart)
-- [Linux](#linux-art)
+- [Linux Commands](#linux-commands-art)
+- [Proxy vs Reverse Proxy :alien:](#proxy-vs-reverse-proxyalien)
 
 ----
 ### HTTP & HTTPS:nail_care:
@@ -88,7 +89,7 @@ IP,（英语：Internet Protocol Address，又译为网际协议地址），缩�
 链接：https://www.jianshu.com/p/806d0514ec7d    
 
 ----
-### Linux :art:
+### Linux Commands:art:
     {
 
     ls -rtl                                    # 按时间倒叙列出所有目录和文件 ll -rt
@@ -227,3 +228,7 @@ IP,（英语：Internet Protocol Address，又译为网际协议地址），缩�
         Ctrl+v s ESC           # 批量取消注释
 
     }
+    
+----
+### Proxy vs Reverse Proxy :alien:
+![alt text](https://i.stack.imgur.com/0qpxZ.png)
