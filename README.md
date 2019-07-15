@@ -4,6 +4,7 @@
 - [general](general.md)
 - [algorithms](algorithms.md):exclamation::exclamation::exclamation:
 - [server](Servers.md)
+- [Linux CA certs](certs.md)
 
 :honey_pot: Front-end
 - [css](css.md)
