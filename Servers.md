@@ -1,6 +1,6 @@
 ## Table of Contents:  
 - [HTTP & HTTPS](#http--httpsnail_care)
-- [Web Servers](#web-serversschool_satchel)
+- [HTTP Servers](#http-serversschool_satchel)
 - [IP && Domain Same && Port](#ip--domain-name--port-heart)
 - [Linux Commands](#linux-commandsart)
 - [Proxy vs Reverse Proxy](#proxy-vs-reverse-proxy-alien)
@@ -17,7 +17,10 @@ People often use the terms HTTPS and SSL interchangeably, but this isn't accurat
 > HTTPS: encrypted password
 
 ----
-### Web Servers:school_satchel:
+### HTTP Servers:school_satchel:
+
+<img src="https://mdn.mozillademos.org/files/8659/web-server.svg" alt="drawing" width="450"/>
+
 #### IIS 
 the most popular web server software for microsoft computers is IIS. if its not already running, follow the instructions below to get things set up.
 
@@ -60,8 +63,9 @@ Once you have installed Node, let's try building our first web server. Create a 
 	});
 	
 After that, run your web server using node app.js, visit http://localhost:3000, and you will see a message 'Hello World'
-#### Other webserver
-https://gist.github.com/jgravois/5e73b56fa7756fd00b89
+
+#### Apache HTTP Server
+https://httpd.apache.org/docs/
 
 ----
 ### IP && Domain Name && Port :heart:
