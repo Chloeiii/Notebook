@@ -4,6 +4,7 @@
 - [IP && Domain Same && Port](#ip--domain-name--port-heart)
 - [Linux Commands](#linux-commandsart)
 - [Proxy vs Reverse Proxy](#proxy-vs-reverse-proxy-alien)
+- [Linux Server IPs](#linux-server-ips-apple)
 
 ----
 ### HTTP & HTTPS:nail_care:
@@ -241,3 +242,12 @@ IP,（英语：Internet Protocol Address，又译为网际协议地址），缩�
 Forward Proxy: Acting on behalf of a requestor (or service consumer)
 
 Reverse Proxy: Acting on behalf of service/content producer.
+
+----
+### Linux Server IPs :apple:
+
+print all your IPv4 and IPv6 addresses:
+
+	ifconfig | grep inet | awk '{print $2}'
+
+----
