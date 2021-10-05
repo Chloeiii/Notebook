@@ -1,11 +1,18 @@
 ## JavaScript:innocent:
 
 ### Table of Contents
+- [Concepts](#concepts)
 - [DOM](#document-object-model-dom)
 - [Array](#array)
 - [Arrow Functions](#arrow-functions)
 - [EventListener](#eventlistener)
 - [Get Elements](#get-elements)
+
+### Concepts
+
+    JS 
+    1. It is the brain of a web page
+    2. It can control the apperance, communications, interations, etc.
 
 ### Document Object Model (DOM)
 When a HTML page is loaded by a browser, it is converted to a hierarchical structure. Every tag in HTML is converted to an element / object in the DOM with a parent-child hierarchy. It makes our HTML more logically structured. Once the DOM is formed, it becomes easier to manipulate (add/modify/remove) the elements on the page.
