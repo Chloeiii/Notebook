@@ -3,6 +3,7 @@
 ### Table of Contents
 - [Concepts](#concepts)
 - [DOM](#document-object-model-dom)
+- [Object](#object)
 - [Array](#array)
 - [Arrow Functions](#arrow-functions)
 - [EventListener](#eventlistener)
@@ -40,6 +41,17 @@ Let us understand the DOM using the following HTML document −
 ![dom structure](https://www.tutorialspoint.com/d3js/images/document_object_model.jpg)   
 
 
+
+### Object
+        let myPet = {
+            type: "Dog",
+            name: "Speedy",
+            dob: "2014-04-05",
+            age: function(){...},
+            siblings: [{...}, {...}]
+        };
+
+    
 ### Array
 select elements from an array
 
