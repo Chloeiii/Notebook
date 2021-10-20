@@ -51,6 +51,10 @@ Let us understand the DOM using the following HTML document −
             siblings: [{...}, {...}]
         };
 
+
+    Note:
+        Function arguments that are primitive types (string, int) are copies of the original data
+        Arguments that are objects are pointers to the same object
     
 ### Array
 select elements from an array
